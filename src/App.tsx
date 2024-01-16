@@ -1,7 +1,8 @@
+import { MyRoutes } from "routes/MyRoutes"
 
 const App = () => {
   return (
-    <div>App</div>
+    <MyRoutes/>
   )
 }
 
