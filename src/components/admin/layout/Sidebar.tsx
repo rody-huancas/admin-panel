@@ -22,7 +22,7 @@ export const Sidebar = () => {
 
   return (
     <>
-      <div className={`lg:w-96 h-screen lg:left-0 px-6 py-5 bg-primary-100 flex flex-col gap-4 z-50 dark:bg-secondary-200 dark:text-primary-200 transition-all duration-300 fixed top-0 ${showMenu ? "left-0" : "-left-full"}`}>
+      <div className={`lg:w-330 h-screen lg:left-0 px-6 py-5 bg-primary-100 flex flex-col gap-4 z-50 dark:bg-secondary-200 dark:text-primary-200 transition-all duration-300 fixed top-0 ${showMenu ? "left-0" : "-left-full"}`}>
         <Link to="/" className="flex justify-center items-center gap-4 mb-5">
           <img
             src="https://dashcode-react.codeshaper.net/assets/favicon.cbd04736.svg"
@@ -137,7 +137,7 @@ export const Sidebar = () => {
       </div>
 
       <button
-        className="lg:hidden absolute bottom-5 right-5 p-4 bg-secondary-100 rounded-full text-primary-100 dark:bg-primary-200 dark:text-secondary-100 text-xl"
+        className="lg:hidden fixed bottom-5 right-5 p-4 bg-secondary-100 rounded-full text-primary-100 dark:bg-primary-200 dark:text-secondary-100 text-xl"
         onClick={toggleShowMenu}
       >
         {showMenu ? <RiCloseLine /> : <RiMenu3Fill /> }

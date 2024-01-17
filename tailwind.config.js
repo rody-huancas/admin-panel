@@ -15,6 +15,12 @@ export default {
           200: "#0E172A",
         },
       },
+      width: {
+        '330': '330px',
+      },
+      padding: {
+        '330': '330px',
+      },
     },
   },
   plugins: [],
