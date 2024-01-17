@@ -12,7 +12,7 @@ import { MenuItem } from "./menu/MenuItem";
 
 export const Sidebar = () => {
   return (
-    <div className="w-[330px] h-screen fixed top-0 left-0 px-6 py-5 bg-primary-100 flex flex-col gap-4">
+    <div className="w-[330px] h-screen fixed top-0 left-0 px-6 py-5 bg-primary-100 flex flex-col gap-4 z-50">
       <Link to="/" className="flex justify-center items-center gap-4 mb-5">
         <img
           src="https://dashcode-react.codeshaper.net/assets/favicon.cbd04736.svg"

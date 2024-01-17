@@ -5,12 +5,14 @@ export const AdminLayout = () => {
   return (
     <div className="flex">
       <Sidebar />
-      <div className="flex-1 pl-[330px] h-[150vh] bg-primary-200">
+      <div className="flex-1 h-[150vh] bg-primary-200 text-gray-900">
         <Header />
 
-        <main className="p-10 mt-24">
+        <main className="pl-[330px] mt-24">
           {/* Inyectar contenido dinámicamente */}
-          <Outlet />
+          <div className="px-10 py-5">
+            <Outlet />
+          </div>
         </main>
         <Footer />
       </div>

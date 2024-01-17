@@ -25,7 +25,7 @@ export const MenuDropdown: React.FC<MenuProps> = ({ title, children, Icon }) => 
       {isOpen && (
         <div className="ml-10 flex flex-col gap-3">
           {React.Children.map(children, (child, index) => (
-            <div key={index} className="flex items-center gap-4">
+            <div key={index} className="flex items-center gap-4 font-normal">
               <span className=" bg-slate-900 dark:bg-slate-300 ring-4 ring-opacity-[15%] ring-black-500 dark:ring-slate-300 dark:ring-opacity-20 h-2 w-2 rounded-full border border-slate-600 dark:border-white inline-block flex-none"></span> {child}
             </div>
           ))}
